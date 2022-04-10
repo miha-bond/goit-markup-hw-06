@@ -60,9 +60,30 @@
         <button class="slogan-button" type="button" data-modal-open>Заказать услугу</button>
         <div class="modal-backdrop is-hidden" data-modal>
           <div class="modal">
-            <p class="modal-text">
-              ghghghghgh
-            </p>
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <form class="form">
+              <label class="form-wraper">
+                <span>Имя</span>
+                <input class="form-imput" type="text" name="user">
+              </label>
+              <label class="form-wraper">
+                <span>Телефон</span>
+                <input class="form-imput" type="tel" name="tel">
+              </label>
+              <label class="form-wraper">
+                <span>Почта</span>
+                <input class="form-imput" type="email" name="">
+              </label>
+              <span>Комментарий</span>
+              <label class="form-wraper">
+                <textarea class="textarea form-impaut" name="comments" rows="5" placeholder="Введите текст"></textarea>
+              <label class="form-wraper">
+                <input class="form-imput" type="checkbox" name=""  checked />
+              </label>
+                <p class="">Соглашаюсь с рассылкой и принимаю</p>
+                <a class="" href="">Условия договора</a>
+              <button type="submit">Отправить</button>
+            </form>
             <button class="button-modal-clos" type="button" data-modal-close>
               <svg class="button-modal-clos-svg" width="11" height="11">
                 <use href="./images/icon/icons.svg#clos-bt"></use>
@@ -458,6 +479,14 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div>
+      <h2>Подпишитесь на рассылку</h2>
+      <form class="form-footer">
+        <label class="form-wraper-footer">
+          <input class="form-imput" type="email" name=""placeholder="E-mail">
+        </label>
+        <button class="button-form-footer" type="submit">Подписаться</button>
       </div>
     </div>
     </footer>
