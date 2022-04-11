@@ -60,29 +60,39 @@
         <button class="slogan-button" type="button" data-modal-open>Заказать услугу</button>
         <div class="modal-backdrop is-hidden" data-modal>
           <div class="modal">
-            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="modal-titel">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="form">
               <label class="form-wraper">
-                <span>Имя</span>
-                <input class="form-imput" type="text" name="user">
+                <span class="form-text">Имя</span>
+                <svg class="icon-form" width="12" height="12">
+                  <use href="./images/icon/icons.svg#modal-name"></use>
+                </svg>
+                <input class="text-form-imput form-imput" type="text" name="user">
               </label>
               <label class="form-wraper">
-                <span>Телефон</span>
-                <input class="form-imput" type="tel" name="tel">
+                <span class="form-text">Телефон</span>
+                <svg class="icon-form" width="13" height="13">
+                  <use href="./images/icon/icons.svg#modal-tel"></use>
+                </svg>
+                <input class="tel-form-imput form-imput" type="tel" name="tel" required>
               </label>
               <label class="form-wraper">
-                <span>Почта</span>
-                <input class="form-imput" type="email" name="">
+                <span class="form-text">Почта</span>
+                <svg class="icon-form" width="15" height="12">
+                  <use href="./images/icon/icons.svg#modal-mail"></use>
+                </svg>
+                <input class="email-form-imput form-imput" type="email" name="mail">
               </label>
-              <span>Комментарий</span>
               <label class="form-wraper">
-                <textarea class="textarea form-impaut" name="comments" rows="5" placeholder="Введите текст"></textarea>
-              <label class="form-wraper">
-                <input class="form-imput" type="checkbox" name=""  checked />
+                <span class="form-text">Комментарий</span>
+                <textarea class="textarea form-imput" name="comments" rows="5" placeholder="Введите текст"></textarea>
               </label>
-                <p class="">Соглашаюсь с рассылкой и принимаю</p>
-                <a class="" href="">Условия договора</a>
-              <button type="submit">Отправить</button>
+              <label class="form-wraper checkbox">
+                <input class="checkbox" type="checkbox" name="checkbox"  checked />
+                <span class="castom-checkbox"></span>
+                <p class="text-treaty">Соглашаюсь с рассылкой и принимаю <span class="text-treaty-alt">Условия договора</span></p>
+              </label>
+              <button class="button-submit" type="submit">Отправить</button>
             </form>
             <button class="button-modal-clos" type="button" data-modal-close>
               <svg class="button-modal-clos-svg" width="11" height="11">
@@ -448,7 +458,7 @@
         </address>
       </div>
       <div class="socials-link-wraper">
-        <h2 class="text-footer-socials">присоединяйтесь</h2>
+        <h2 class="title-footer-socials">присоединяйтесь</h2>
         <ul class="socials-list-footer">
           <li class="socials-footer">
             <a class="socials-link-footer" href="">
@@ -480,13 +490,13 @@
           </li>
         </ul>
       </div>
-      <div>
-      <h2>Подпишитесь на рассылку</h2>
+      <div class="form-footer-wraper">
+      <h2 class="title-footer-form">Подпишитесь на рассылку</h2>
       <form class="form-footer">
         <label class="form-wraper-footer">
-          <input class="form-imput" type="email" name=""placeholder="E-mail">
+          <input class="form-email-footer" type="email" name=""placeholder="E-mail">
         </label>
-        <button class="button-form-footer" type="submit">Подписаться</button>
+        <button class="button-form-footer" type="submit"><span class="text-button-footer">Подписаться</span></button>
       </div>
     </div>
     </footer>
