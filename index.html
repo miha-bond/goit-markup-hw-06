@@ -64,33 +64,33 @@
             <form class="form">
               <label class="form-wraper">
                 <span class="form-text">Имя</span>
+                <input class="text-form-imput form-imput" type="text" name="user">
                 <svg class="icon-form" width="12" height="12">
                   <use href="./images/icon/icons.svg#modal-name"></use>
                 </svg>
-                <input class="text-form-imput form-imput" type="text" name="user">
               </label>
               <label class="form-wraper">
                 <span class="form-text">Телефон</span>
+                <input class="tel-form-imput form-imput" type="tel" name="tel" required>
                 <svg class="icon-form" width="13" height="13">
                   <use href="./images/icon/icons.svg#modal-tel"></use>
                 </svg>
-                <input class="tel-form-imput form-imput" type="tel" name="tel" required>
               </label>
               <label class="form-wraper">
                 <span class="form-text">Почта</span>
+                <input class="email-form-imput form-imput" type="email" name="mail">
                 <svg class="icon-form" width="15" height="12">
                   <use href="./images/icon/icons.svg#modal-mail"></use>
                 </svg>
-                <input class="email-form-imput form-imput" type="email" name="mail">
               </label>
               <label class="form-wraper">
                 <span class="form-text">Комментарий</span>
                 <textarea class="textarea form-imput" name="comments" rows="5" placeholder="Введите текст"></textarea>
               </label>
-              <label class="form-wraper checkbox">
+              <label class="form-wraper checkbox-wraper">
                 <input class="checkbox" type="checkbox" name="checkbox"  checked />
                 <span class="castom-checkbox"></span>
-                <p class="text-treaty">Соглашаюсь с рассылкой и принимаю <span class="text-treaty-alt">Условия договора</span></p>
+                <span class="text-treaty">Соглашаюсь с рассылкой и принимаю<a class="text-treaty-link" href="">Условия договора</a></span>
               </label>
               <button class="button-submit" type="submit">Отправить</button>
             </form>
@@ -494,9 +494,14 @@
       <h2 class="title-footer-form">Подпишитесь на рассылку</h2>
       <form class="form-footer">
         <label class="form-wraper-footer">
-          <input class="form-email-footer" type="email" name=""placeholder="E-mail">
+          <input class="form-email-footer" type="email" name="email" placeholder="E-mail">
         </label>
-        <button class="button-form-footer" type="submit"><span class="text-button-footer">Подписаться</span></button>
+        <button class="button-form-footer" type="submit">Подписаться
+          <svg class="icon-button-footer" width="24" height="24">
+            <use href="./images/icon/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+        </form>
       </div>
     </div>
     </footer>
