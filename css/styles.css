@@ -266,10 +266,9 @@ fill: currentColor;
   margin-bottom: 10px;
 }
 
-.form-wraper:nth-child(n + 4){
-  margin-bottom: 0;
+.form-wraper:nth-child(4){
+  margin-bottom: 20px;
 }
-
 
 .form-text{
   margin-bottom: 4px;
@@ -292,11 +291,10 @@ fill: currentColor;
 }
 
 .icon-form{
-  width: 18px;
-  height: 18px;
+
   position: absolute;
-  left: 12px;
-  bottom: 11px;
+  left: 15px;
+  bottom: 14px;
   fill: var(--main-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -322,46 +320,49 @@ fill: currentColor;
   width: 448px;
   height: 120px;
   padding: 12px 16px;
-  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   resize: none;
 }
-
 .checkbox-wraper{
-display: flex;
-justify-content: center;
-white-space: nowrap;
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
+
 .checkbox{
-position: relative;
+
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
 }
 .castom-checkbox{
-  position: absolute;
-  top: 50%;
-  left: 14px;
-  transform: translateY(-50%);
-  display: inline-block;
-  height: 15px;
+  background-image: url(../images/icon/checbox.svg);
   width: 16px;
-  background-image: url(/images/icon/checbox.svg#checbox);
-  border-radius: 2px;
+  height: 15px;
 }
-.checkbox:checked + .castom-checkbox{
-  background-repeat:no-repeat;
+
+
+.checkbox:checked + .castom-checkbox,
+.checkbox:focus-visible + .castom-checkbox{
+  background-image: url(../images/icon/checbox-checked.svg);
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(/images/icon/checbox-checked.svg);
-  background-color: var(--activ-link-but);
+  background-color: #2196f3;
   border-radius: 2px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-treaty{
-  margin-left: 30px;
+  margin-left: 8.5px;
+
   text-align:center;
   font-style: normal;
   font-weight: 400;
@@ -376,7 +377,7 @@ appearance: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-submit{
-  margin-top: 30px;
+
   text-align: center;
   width: 200px;
   height: 50px;
@@ -392,6 +393,7 @@ appearance: none;
   border-radius: 4px;
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .button-submit:focus,
@@ -911,8 +913,7 @@ display: flex;
   font-size: 14px;
   line-height: 1.14;
   color: var(--white);
-  }
-
+}
 .form-email-footer{
   margin-right: 12px;
   padding: 16px 12px;
@@ -928,12 +929,11 @@ display: flex;
 }
 .button-form-footer{
   display: inline-flex;
-  position: absolute;
   align-items: center;
   justify-content: center;
   width: 200px;
   height: 50px;
-  padding: 0;
+
 
   font-weight: 700;
   font-size: 16px;
@@ -954,6 +954,5 @@ display: flex;
 
 .icon-button-footer{
   display: block;
-  position: relative;
-  left: 10px;
+  margin-left: 10px;
 }
