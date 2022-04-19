@@ -915,6 +915,10 @@ display: flex;
   line-height: 1.14;
   color: var(--white);
 }
+
+.form-wraper-footer{
+  margin-right: 12px;
+}
 .form-email-footer{
   padding: 16px 12px;
   width: 358px;
